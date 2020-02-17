@@ -16,7 +16,7 @@ const getRegex = (term, regex) => new RegExp(term, regex);
   let term = args.term || args.t;
   let value = "";
   if (args.value || args.v) value = args.value || args.v;
-  const simple_regex = args.sr;
+  const simple_regex = args.sr || "";
   if (simple_regex) term = getRegex(term, simple_regex);
 
   const [action] = args._;
@@ -36,6 +36,6 @@ const getRegex = (term, regex) => new RegExp(term, regex);
       console.error("action not found.");
       break;
   }
-
+  if (args.debug) console.log({ args, data, action, term, value });
   console.log(output);
 })(args, data);
