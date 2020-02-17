@@ -1,7 +1,6 @@
 {
   "name": "strin",
   "version": "0.0.1",
-  "description": "",
   "main": "index.js",
   "bin": {
     "strin": "index"
@@ -9,10 +8,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "string"
+  ],
+  "author": "Nir Adler",
+  "license": "MIT",
   "dependencies": {
     "minimist": "^1.2.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niradler/strin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niradler/strin/issues"
+  },
+  "homepage": "https://github.com/niradler/strin#readme",
+  "description": ""
 }
