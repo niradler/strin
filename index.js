@@ -26,10 +26,12 @@ const getRegex = (term, regex) => new RegExp(term, regex);
       output = output.replace(term, value);
       break;
     case "join":
-      output = output.join(term, value);
+      output = JSON.parse(output);
+      output = output.join(term);
       break;
     case "split":
-      output = output.split(term, value);
+      output = output.split(term);
+      output = JSON.stringify(output);
       break;
 
     default:
